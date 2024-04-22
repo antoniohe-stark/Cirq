@@ -86,7 +86,7 @@ if __name__ == "__main__":
     qubits, mr_krabs_bases, mr_krabs_circuit = mr_krabs_prepare_qubits(num_qubits)
 
     # Quantum noise simulation to reflect the environment
-    add_quantum_noise(mr_krabs_circuit, noise_level=0.05)  # Simular un poco de ruido
+    add_quantum_noise(mr_krabs_circuit, noise_level=0.05)  # sim a little by noise
 
     # Spongebob chooses bases and measures qubits
     spongebob_bases, spongebob_circuit = spongebob_measure_qubits(qubits, mr_krabs_bases)
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         print("Shared key:", shared_key)
 
         # Original message representing the secret formula (ASCII example)
-        message = "the secret is NOTHING!!"  # Mensaje que se cifrará
+        message = "the secret is NOTHING!!"  #mesage to use
 
         # Encrypt the message using the shared key
         encrypted_message = encrypt_message(message, shared_key)
